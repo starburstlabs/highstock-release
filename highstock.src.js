@@ -42392,8 +42392,8 @@
 
             options = merge({
                     chart: {
-                        panning: true,
-                        pinchType: 'x'
+                        panning: pick(defaultOptions.chart.panning, true),
+                        pinchType: pick(defaultOptions.chart.pinchType, 'x')
                     },
                     navigator: {
                         enabled: navigatorEnabled
